@@ -1,0 +1,27 @@
+.Delete{
+    background-color: #585555;
+    color: white;
+    height: 760px;
+    text-align: center
+}
+.DeleteButton{
+    margin-top: 20px;
+}
+.username{
+    margin-top:10px;
+}
+.password{
+    margin-top:10px;
+}
+#delete{
+    margin-right: 50px;
+}
+#usernamelable{
+    margin-right:20px
+}
+#passwordlable{
+    margin-right:20px
+}
+.DeleteTitle{
+    margin-bottom: 20px;
+}

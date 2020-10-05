@@ -1,0 +1,19 @@
+.Detail{
+    background-color: #585555;
+    color: white;
+    height: 760px;
+    text-align: center
+}
+.Detail Table{
+    background-color: slategrey;
+    height: auto;
+    margin: auto;
+    width:500px
+}
+.DetailTitle{
+    margin-bottom:20px;
+    text-align:center
+}
+.detailbutton{
+    margin-top: 10px;
+}

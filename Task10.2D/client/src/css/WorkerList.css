@@ -1,0 +1,26 @@
+.Card {
+    float: left;
+    margin-top: 20px;  
+    margin-right:20px;
+    margin-left:20px;
+    margin-bottom:20px;
+    background-color: rgb(206, 118, 10);
+    color: black;
+  }
+  .TaskHome{
+    height: 880px;
+    width: auto;
+    background-color: #585555;
+    color: white;
+  }
+
+  #link{
+    margin-right:10px;
+  }
+  
+.TaskList{
+list-style-type: none; 
+overflow: auto;
+margin-bottom: 50px;
+margin-left:10%
+}

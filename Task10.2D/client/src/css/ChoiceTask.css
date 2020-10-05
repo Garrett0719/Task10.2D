@@ -1,0 +1,22 @@
+.SetChoice .ui input{
+    width:250px;
+    height:30px;
+}
+.SetChoice label{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.SetChoice h3{
+    margin-left: 10px;
+}
+
+.option{
+    margin-bottom:20px;
+}
+#one{
+    margin-right: 20px;
+}
+#two{
+    margin-right: 15px;
+}

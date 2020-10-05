@@ -1,0 +1,15 @@
+.Task{
+    background-color: #585555;
+    color: white;
+}
+.ListTile{
+    text-align: center
+}
+
+#Searchlabel{
+    
+    margin-right:10px
+}
+.Search{
+    text-align: center;
+}
