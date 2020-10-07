@@ -1,8 +1,6 @@
 .Detail{
-    background-color: #585555;
-    color: white;
-    height: 760px;
-    text-align: center
+    text-align: center;
+    margin-top:100px
 }
 .Detail Table{
     background-color: slategrey;
@@ -15,5 +13,5 @@
     text-align:center
 }
 .detailbutton{
-    margin-top: 10px;
+    margin-top: 20px;
 }

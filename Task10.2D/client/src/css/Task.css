@@ -1,6 +1,6 @@
 .Task{
-    background-color: #585555;
     color: white;
+    background-color: #2b3e50;
 }
 .ListTile{
     text-align: center
@@ -12,4 +12,7 @@
 }
 .Search{
     text-align: center;
+}
+#Searchinput:hover{
+    border-color: crimson;
 }

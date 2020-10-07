@@ -1,6 +1,7 @@
 import React, {useState,useEffect}from 'react';
 import {getTodos} from '../api'
 import TaskCard from './TaskCard'
+import faker from 'faker'
 import '../css/WorkerList.css'
 
 const WorkerList = (props) =>{
@@ -26,6 +27,7 @@ const WorkerList = (props) =>{
                     filteredTask.map((todo,index) =>(
                         <TaskCard
                         key = {index}
+                        avatar={faker.image.avatar()}
                         Title = {todo.TaskTitle}
                         description={todo.TaskDescription}
                         ExpiryDate={todo.ExpiryDate}

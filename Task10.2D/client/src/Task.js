@@ -13,10 +13,11 @@ function TaskListView() {
 const [searchTerm,setSearchTerm] = useState('')
   return (
     <div className='Task'>
+      
             <NavBar />
             <h1 className='ListTile'>TaskList</h1>
          <div>
-        <InputExample labelid='Searchlabel' classname='Search' type="text" text="Search Task by Title" onChange={onSearchChange} value={searchTerm}/>
+        <InputExample labelid='Searchlabel' inputid='Searchinput' classname='Search' type="text" text="Search Task by Title" onChange={onSearchChange} value={searchTerm}/>
         </div>
         <WorkerList searchTask={searchTerm}/>
     </div>

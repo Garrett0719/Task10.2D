@@ -10,3 +10,6 @@
 .Sentence h3{
     margin-left: 10px;
 }
+#questioninput:hover{
+    border-color:crimson
+}

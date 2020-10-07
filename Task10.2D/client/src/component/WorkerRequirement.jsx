@@ -19,9 +19,9 @@ const WorkerRequirement = (props) => {
             </span> 
         </div>
             <div>
-                <InputExample classname='text' text='Reward per response' type='text' name='Reward' onChange={props.Reward}/>
+                <InputExample inputid='rewardinput' classname='text' text='Reward per response' type='text' name='Reward' onChange={props.Reward}/>
                 <br></br>
-                <InputExample labelid='number' classname='text' text='Number of workers' type='text' name='Numbers' onChange={props.Numbers}/>
+                <InputExample inputid='numberinput' labelid='number' classname='text' text='Number of workers' type='text' name='Numbers' onChange={props.Numbers}/>
             </div>
         </div>
     )

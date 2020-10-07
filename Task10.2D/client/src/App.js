@@ -8,12 +8,17 @@ import ChoiceTask from './component/ChoiceTask';
 import DecisionTask from './component/DecisionTask';
 import SentenceTask from './component/SentenceTask';
 import ImageTask from './component/ImageTask'
+import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
 import './css/Home.css';
 import './css/NavBar.css';
 
 
 
 function App() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+
   const [isValue,setValue] = useState('')
   const[contact,setInput] = useState({
     TaskType: '',
@@ -294,6 +299,7 @@ function App() {
   }
 
   const handleSubmit = () =>{
+    setShow(true)
     fetch('http://localhost:8000/register',{
       method :'post',
       headers :{'Content-Type':'application/json'},
@@ -320,6 +326,9 @@ function App() {
   }
 
   return(
+    <div>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css" integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" crossOrigin="anonymous"></link>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
     <div className ='home'>
       <NavBar/>
         <div className='title'>
@@ -371,7 +380,22 @@ function App() {
         }
         <WorkerRequirement Require={InputChange} Reward={InputChange} Numbers={InputChange}/>
         <div className='button'>
-                  <button type='submit' className="ui button" id='SubmitButton' onClick={handleSubmit}>Save</button>
+        <Button variant="primary" onClick={handleSubmit} id='SubmitButton'>
+        Save
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Congratulations</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>The data has been saved in database!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            Ok
+          </Button>
+        </Modal.Footer>
+      </Modal>
+        </div>
         </div>
         </div>
       

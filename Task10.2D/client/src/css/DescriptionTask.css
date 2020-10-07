@@ -2,7 +2,7 @@
 {
     margin-top:20px;
     margin-bottom: 20px;
-    background-color: dimgrey;
+    background-color: #4e5d6c;
     color:white;
 }
 .Description{
@@ -17,5 +17,14 @@
     height:30px;
 }
 #labeltile{
-    margin-right: 55px;
+    margin-right: 50px;
+}
+#Titleinput:hover{
+    border-color:crimson
+}
+#Descriinput:hover{
+    border-color:crimson
+}
+#Dateinput:hover{
+    border-color:crimson
 }

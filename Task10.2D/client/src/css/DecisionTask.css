@@ -3,6 +3,10 @@
     height:30px;
 }
 
+#decision:hover{
+    border-color:crimson
+}
+
 .Decision label{
     margin-right: 10px;
     margin-left: 10px;

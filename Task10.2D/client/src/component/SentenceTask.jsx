@@ -11,7 +11,7 @@ const SentenceTask = (props) => {
         </div>
         <div className='Sentence'>
         <h3>Please set up your task question</h3>
-            <InputExample text='Please set up your task question' type='text' onChange={props.SentenceTask} name='TaskQuestion'/>
+            <InputExample inputid='questioninput' text='Please set up your task question' type='text' onChange={props.SentenceTask} name='TaskQuestion'/>
         </div>
         </div>
     )

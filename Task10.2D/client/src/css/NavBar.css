@@ -1,7 +1,7 @@
 .Navbar{
     list-style-type: none;
     overflow: hidden;
-    background-color: dimgrey;
+    background-color:#4e5d6c
 }
 li {
     display: inline;

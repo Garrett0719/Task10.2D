@@ -10,10 +10,10 @@ const ChoiceTask = (props) => {
         </div>
         <div className='SetChoice'>
         <h3>Please set up your task question and options</h3>
-            <InputExample  classname='option' text='Please set up your task question' type='text' name='TaskQuestion' onChange={props.ChoiceTask}/>
-            <InputExample labelid = 'one' classname='option' text='Option one' type='text' name='OptionOne' onChange={props.OptionOne}/>
-            <InputExample labelid = 'two' classname='option' text='Option Two' type='text'  name='OptionTwo' onChange={props.OptionTwo}/>
-            <InputExample labelid = 'three' classname='option' text='Option three' type='text'  name='OptionThree' onChange={props.OptionThree}/>
+            <InputExample  classname='option' inputid='questioninput' text='Please set up your task question' type='text' name='TaskQuestion' onChange={props.ChoiceTask}/>
+            <InputExample inputid='oneinput' labelid = 'one' classname='option' text='Option one' type='text' name='OptionOne' onChange={props.OptionOne}/>
+            <InputExample inputid='twoinput' labelid = 'two' classname='option' text='Option Two' type='text'  name='OptionTwo' onChange={props.OptionTwo}/>
+            <InputExample inputid='threeinput' labelid = 'three' classname='option' text='Option three' type='text'  name='OptionThree' onChange={props.OptionThree}/>
         </div>
         </div>
     )

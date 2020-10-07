@@ -8,7 +8,8 @@ const TaskCard = (props) =>
 
     return (
     <div className='Card'>
-        <Card style={{ width: '18rem' }} bg={'light'} border={'info'}>
+<Card style={{ width: '18rem' }} bg={'light'} border="warning">
+  <Card.Img variant="top" src={props.avatar} width="286px" height="180px"/>
   <Card.Body>
     <Card.Title>{props.Title}</Card.Title>
     <Card.Subtitle className="mb-2 text-muted">ExpiryDate:{props.ExpiryDate}</Card.Subtitle>

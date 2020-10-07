@@ -33,7 +33,7 @@ const ImageTask = () => {
         Please choose a image file, the image will upload to 'uploads' folder.
       </Header>
       <form onSubmit={handleSubmit(onSubmit)} id='myForm'>
-      <InputExample type='file' ref={upload} classname='ImageUpload' name='picture'/>
+      <InputExample inputid='imageinput' type='file' ref={upload} classname='ImageUpload' name='picture'/>
       <button type='submit' className='ui button' id='ImageButton'>Upload Image</button>
       </form>
     </Segment>
